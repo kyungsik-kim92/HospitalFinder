@@ -15,12 +15,13 @@ import net.daum.mf.map.api.MapView
 
 
 lateinit var mapView: MapView
-private lateinit var mapViewContainer: ViewGroup
 
-private var uLatitude: Double = 0.0
-private var uLongitude: Double = 0.0
+
+//private var uLatitude: Double = 0.0
+//private var uLongitude: Double = 0.0
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var mapViewContainer: ViewGroup
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         initMapView()
 
     }
-
 
 
     private fun initMapView() {
@@ -47,7 +47,6 @@ class MainActivity : AppCompatActivity() {
             mapPoint = MapPoint.mapPointWithGeoCoord(37.5666805, 126.9784147)   // 좌표
             markerType = MapPOIItem.MarkerType.RedPin          // 마커 모양 (커스텀)
             selectedMarkerType = MapPOIItem.MarkerType.RedPin  // 클릭 시 마커 모양 (커스텀)
-            isCustomImageAutoscale = false      // 커스텀 마커 이미지 크기 자동 조정
             setCustomImageAnchor(0.5f, 1.0f)    // 마커 이미지 기준점
         }
         mapView.addPOIItem(marker)
