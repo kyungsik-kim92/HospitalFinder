@@ -14,15 +14,10 @@ import net.daum.mf.map.api.MapPoint
 import net.daum.mf.map.api.MapView
 
 
-lateinit var mapView: MapView
-
-
-//private var uLatitude: Double = 0.0
-//private var uLongitude: Double = 0.0
-
 class MainActivity : AppCompatActivity() {
     private lateinit var mapViewContainer: ViewGroup
     private lateinit var binding: ActivityMainBinding
+    private lateinit var mapView : MapView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
