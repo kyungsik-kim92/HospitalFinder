@@ -1,4 +1,3 @@
-import com.android.build.gradle.internal.cxx.configure.abiOf
 
 plugins {
     id("com.android.application")
@@ -43,7 +42,7 @@ android {
     }
 
     buildFeatures{
-        viewBinding = true
+        dataBinding = true
     }
 
 
@@ -69,6 +68,12 @@ dependencies {
 
     implementation("com.google.dagger:hilt-android:2.48.1")
     kapt("com.google.dagger:hilt-android-compiler:2.48.1")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.core:core-ktx:1.12.0")
+
+    implementation("androidx.activity:activity-ktx:1.8.2")
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
 
 
 

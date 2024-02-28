@@ -1,9 +1,8 @@
 package com.example.hospitalfinder.data.repo
 
-import com.example.dev_ks.network.response.KakaoSearchResponse
-import com.example.hospitalfinder.data.source.KakaoRemoteDataSource
+import com.example.hospitalfinder.network.response.KakaoSearchResponse
+import com.example.hospitalfinder.data.source.remote.KakaoRemoteDataSource
 import retrofit2.Response
-import javax.inject.Inject
 
 class KakaoRepositoryImpl(private val kakaoRemoteDataSource: KakaoRemoteDataSource) :
     KakaoRepository {

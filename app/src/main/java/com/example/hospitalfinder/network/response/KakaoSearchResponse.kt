@@ -1,4 +1,4 @@
-package com.example.dev_ks.network.response
+package com.example.hospitalfinder.network.response
 
 data class KakaoSearchResponse(
     val documents: List<Document>,

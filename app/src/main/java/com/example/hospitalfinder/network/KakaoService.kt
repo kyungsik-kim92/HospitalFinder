@@ -1,6 +1,6 @@
 package com.example.hospitalfinder.network
 
-import com.example.dev_ks.network.response.KakaoSearchResponse
+import com.example.hospitalfinder.network.response.KakaoSearchResponse
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
