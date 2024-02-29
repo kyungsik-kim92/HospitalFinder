@@ -7,12 +7,16 @@ import com.example.hospitalfinder.base.BaseFragment
 import com.example.hospitalfinder.base.ViewEvent
 import com.example.hospitalfinder.base.ViewState
 import com.example.hospitalfinder.databinding.FragmentHomeBinding
-import com.example.hospitalfinder.ui.BookmarkFragment
-import com.example.hospitalfinder.ui.MapFragment
+import com.example.hospitalfinder.ui.bookmark.BookmarkFragment
+import com.example.hospitalfinder.ui.map.MapFragment
 import com.example.hospitalfinder.ui.adapter.FragmentPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
 
+
+@AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
+
     override val viewModel: HomeViewModel by viewModels()
 
 
